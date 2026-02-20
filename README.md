@@ -1,8 +1,11 @@
-1. Adquisición de Datos: descarga el conjunto de datos "Heart Disease UCI" desde el repositorio de Kaggle, que es una versión limpia y accesible del original.
-Enlace: https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
-Deberás crear una cuenta en Kaggle si no tienes una. La descarga es gratuita.
+1. Adquisición de Datos: 
+  El conjunto de datos utilizado es "UCI Heart Disease Data", el cual involucra cierta cantidad de variables matematicas o estadisticas. Compuesto de 14 atributos como edad, sexo, tipo de dolor en el pecho, presión arterial en reposo, colesterol sérico, nivel de azúcar en sangre en ayunas, resultados electrocardiográficos en reposo, frecuencia cardíaca máxima alcanzada, angina inducida por el ejercicio, oldpeak (depresión del segmento ST inducida por el ejercicio en relación con el reposo), pendiente del segmento ST en el punto máximo del ejercicio, número de vasos principales y talasemia.
+
+  Una de las principales tareas de este dataset es predecir, apartir de los atributos dados por los pacientes, si esa persona presenta o no enfermedad cardiaca. Además el análisis experimental para diagnosticar y extraer hallazgos del conjunto de datos, lo que puede contribuir a una mejor comprensión del problema.
 
 2. Configuración del entorno: prepara tu ambiente de trabajo en R (usando RStudio) o Python (usando Jupyter Notebook). Carga las librerías necesarias para la manipulación de datos (dplyr o pandas), visualización (ggplot2 o matplotlib/seaborn) y análisis.
+  El análisis fue desarrollado en Python utilizando Jupyter Notebook como entorno de trabajo, desde Visual Studio Code con la extensión oficial de Jupyter.
+
 
 3. Análisis descriptivo y exploratorio (EDA): siguiendo la metodología de Tukey, realiza un EDA completo:
 • Carga los datos y realiza una inspección inicial (estructura, nombres de variables, tipos de datos).
