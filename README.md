@@ -136,7 +136,3 @@ El análisis exploratorio permitió identificar variables con mayor poder discri
 - `ca`
 - `thalach`
 - `age`
-
-El colesterol, aunque clínicamente relevante, no mostró una diferenciación fuerte en esta muestra específica.
-
-El informe presentado es reproducible, contiene código claramente estructurado, resultados numéricos y gráficos acompañados de interpretaciones contextualizadas dentro del problema de salud.
