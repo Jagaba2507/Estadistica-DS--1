@@ -29,3 +29,114 @@
 • El código utilizado en bloques claramente definidos.
 • Los resultados numéricos (tablas de resumen) y gráficos generados.
 • Interpretaciones escritas: Debajo de cada tabla o gráfico, añade un párrafo explicando qué muestra el resultado en el contexto del problema de salud, respondiendo a las preguntas orientadoras.
+
+
+## Análisis de Asociación y Probabilidad
+
+### Matriz de correlación
+
+Se calculó la matriz de correlación de Pearson entre variables numéricas y se visualizó mediante un mapa de calor.
+
+**Hallazgos principales:**
+
+- `ca` y `oldpeak` muestran correlación positiva moderada con la severidad.
+- `thalach` presenta correlación negativa moderada con la enfermedad.
+- `chol` y `trestbps` muestran correlaciones débiles.
+
+Esto indica que algunas variables funcionales tienen mayor asociación lineal con la enfermedad que otras variables tradicionales como el colesterol.
+
+---
+
+### Probabilidades Condicionales
+
+Se calcularon probabilidades condicionales relevantes, tales como:
+
+- P(target = 1)
+- P(target = 1 | sex = Male)
+- P(target = 1 | oldpeak > 1)
+- P(target = 1 | thalach < 120)
+- P(target = 1 | ca ≥ 1)
+
+**Hallazgos clave:**
+
+- La probabilidad general de enfermedad es aproximadamente 55%.
+- En hombres, la probabilidad es significativamente mayor.
+- Valores altos de `oldpeak`, menor `thalach` y presencia de vasos afectados (`ca ≥ 1`) incrementan notablemente la probabilidad de enfermedad.
+- El colesterol elevado no mostró un aumento marcado en la probabilidad en esta muestra.
+
+Este análisis permitió evaluar factores de riesgo desde una perspectiva probabilística.
+
+---
+
+## Visualización Exploratoria
+
+Se generaron los siguientes gráficos:
+
+### Histogramas
+
+Para visualizar la distribución de:
+
+- Edad (`age`)
+- Colesterol (`chol`)
+
+Se observó que la mayoría de pacientes se concentran entre 45 y 65 años.  
+El colesterol presenta algunos valores elevados, aunque la mayor concentración se encuentra entre 180 y 300.
+
+---
+
+### Diagramas de Barras
+
+Para variables categóricas:
+
+- `sex`
+- `cp`
+- `target`
+
+Se evidenció predominancia de hombres en la muestra y una ligera mayoría de pacientes con enfermedad.
+
+---
+
+### Diagramas de Caja (Boxplots)
+
+Se compararon las distribuciones de:
+
+- `thalach`
+- `age`
+- `oldpeak`
+- `chol`
+
+entre pacientes con y sin enfermedad.
+
+Se observó que:
+
+- Los pacientes con enfermedad tienden a tener menor `thalach`.
+- Presentan mayor `oldpeak`.
+- Son, en promedio, mayores.
+- `chol` no muestra una separación tan clara entre grupos.
+
+---
+
+### Scatterplots
+
+Se analizaron relaciones entre variables como:
+
+- `age` vs `thalach`
+- `oldpeak` vs `thalach`
+- `age` vs `chol`
+
+Se observó mayor diferenciación visual en combinaciones que incluyen `thalach` y `oldpeak`, mientras que la relación entre edad y colesterol muestra alta superposición entre grupos.
+
+---
+
+## Conclusión General
+
+El análisis exploratorio permitió identificar variables con mayor poder discriminativo para la presencia de enfermedad cardíaca, especialmente:
+
+- `oldpeak`
+- `ca`
+- `thalach`
+- `age`
+
+El colesterol, aunque clínicamente relevante, no mostró una diferenciación fuerte en esta muestra específica.
+
+El informe presentado es reproducible, contiene código claramente estructurado, resultados numéricos y gráficos acompañados de interpretaciones contextualizadas dentro del problema de salud.
